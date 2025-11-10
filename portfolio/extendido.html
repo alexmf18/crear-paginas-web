@@ -4,10 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prueba html</title>
+    <script src="https://kit.fontawesome.com/0bcbdb8836.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/styles2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <h2>CV Extendido</h2>
-    <h3>Datos personales</h3>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias aliquam repudiandae, praesentium quos, accusamus consequuntur laudantium fugiat iusto natus distinctio iste voluptatem dolorem atque perferendis. Distinctio reiciendis libero harum error.</p>
+    <article>
+        <nav>
+            <ul>
+                <li><a href="#aboutMe">Sobre mi</a></li>
+                <li><a href="#educacion">Formacion</a></li>
+                <li id="logo"><a href="#inicio"><img src="imagenes/cascos.png" alt="logo"></a></li>
+                <li><a href="#experiencia">Skills</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <section id="aboutMe">
+            <h1>CV Extendido</h1>
+            <h3>Datos personales</h3>
+            <div id="datos_personales">
+                <div class="items">
+                    <img src="imagenes/about-img_250.png" alt="imagen">
+                </div>
+                <div class="items">
+                    <div id="datos">
+                        <table>
+                        <thead>
+                            <th colspan="4">Alex Morcillo</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><i class="fa-solid fa-user"></i>Edad</td>
+                                <td>28</td>
+                                <td><i class="fa-solid fa-location-dot"></i>Ciudad</td>
+                                <td>Barcelona</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-graduation-cap"></i>Estudios</td>
+                                <td>CFGM</td>
+                                <td><i class="fa-solid fa-building-columns"></i>Especialidad</td>
+                                <td>programacion</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-heart"></i>Aficion</td>
+                                <td>Videojuegos</td>
+                                <td><i class="fa-solid fa-volleyball"></i>Deporte</td>
+                                <td>Futbol</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                </div>   
+            </div>
+            
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias aliquam repudiandae, praesentium quos, accusamus consequuntur laudantium fugiat iusto natus distinctio iste voluptatem dolorem atque perferendis. Distinctio reiciendis libero harum error.</p>
+        </section>
+        <section id="education">
+            <h3>Educacion</h3>
+            <div class="gridexp">
+                <div class="cardexp">
+                    <img src="imagenes/escuela.jpg" alt="escuela">
+                    <h2>CFGM Sistemas microinformaticos y redes</h2>
+                    <h3><a href="https://www.bernatelferrer.cat/">IES Bernat el ferrer</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem.</p>
+                </div>
+                <div class="cardexp">
+                    <img src="imagenes/escuela.jpg" alt="escuela">
+                    <h2>CFGM Sistemas microinformaticos y redes</h2>
+                    <h3><a href="https://www.bernatelferrer.cat/">IES Bernat el ferrer</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem.</p>
+                </div>
+                <div class="cardexp">
+                    <img src="imagenes/escuela.jpg" alt="escuela">
+                    <h2>CFGM Sistemas microinformaticos y redes</h2>
+                    <h3><a href="https://www.bernatelferrer.cat/">IES Bernat el ferrer</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Bloque sobre Experiencia-->
+        <section id="experiencia">
+            <h2>Experiencia & Skills</h2>
+            <div id="icons">
+                <h3>Programación</h3>
+                <p>tengo 7 años de experiencia en el sector IT como tecnico de BBDD y resolucion de incicencias y conocimientos en lenguajes de programacion</p>
+                <ul>
+                    <li><i class="fa-solid fa-code"></i></li>
+                    <li><i class="fa-solid fa-database"></i></li>
+                    <li><i class="fa-solid fa-sitemap"></i></li>
+                </ul>
+            </div>
+        </section>
+        <section id="coments">
+            <h2>Comentarios</h2>
+            <form action="#">
+                <div class="itemform">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" minlength="2" maxlength="75" required>
+                </div>
+                <div class="itemform">
+                    <label for="prioridad">Prioridad:</label>
+                    <select name="prioridad" id="prioridad">
+                        <option value="">--Please choose an option--</option>
+                        <option value="alta">Alta</option>
+                        <option value="media">Media</option>
+                        <option value="baja">Baja</option>
+                    </select>
+                </div>
+                <div class="itemform">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" cols="33" rows="5" required></textarea>
+                </div>
+                <div class="itemform">
+                    <input type="submit" name="enviar" id="enviar" value="ENVIAR">
+                </div>
+            </form>
+        </section>
+    </article>
+    <footer></footer>
 </body>
 </html>

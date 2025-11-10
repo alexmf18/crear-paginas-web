@@ -1,0 +1,204 @@
+
+/* CSS general de elementos */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #222222;
+    color: white;
+    font: 200 14px "Montserrat", sans-serif;
+}
+h1{
+    font-size: 42px;
+}
+h2{
+    font-size: 36px;
+}
+h3 {
+    color: #999;
+    font-size: 18px;
+    font-weight: 500;
+}
+section{
+    padding: 10px 100px 10px 100px;
+    background-color: #222;
+}
+p {
+    text-align: justify;
+    color: white;
+    font-weight: 500;
+}
+cite{
+    font-weight: 300;
+}
+header{
+    font-weight: 300;
+}
+td{
+    padding-right: 20px;
+}
+
+/* CSS ids y clases */
+
+
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: #222;
+    padding: 5px;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+nav ul {
+    list-style: none;
+    display: inline-block;
+    margin-top: 5px;
+}
+nav ul img{
+    width: 35px;
+    height: 30px;
+}
+nav ul li{
+    float: left;
+    margin-right: 10px;
+}
+#logo{
+    padding: 0px;
+}
+#experiencia {
+    background-color: #222;
+}
+#aboutMe {
+    padding-top: 70px;
+    color: white;
+}
+#education {
+    color: white;
+}
+.hastag {
+    color: #ffc900;
+}
+.seccion {
+    padding: 10px 100px 10px 100px;
+    background-color: #222;
+}
+#experiencia {
+    border-top: 3px solid #ffc900;
+}
+#datos th {
+    text-align: center;
+    padding-right: 15px;
+    background-color: white;
+    color: #222;
+}
+#icons ul {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+a:any-link {
+    color: white;
+}
+a-webkit-any-link {
+    color: white;
+}
+a-moz-any-link {
+    color: white;
+}
+a:hover {
+    color: #ffc900;
+}
+a:hover {
+    color: #ffc900;
+}
+.edu{
+    padding-top: 10px;
+}
+#datos_personales {
+    margin-top: 20px;
+    display: flex;
+    column-gap: 20px;
+
+}
+/*Card experiencia*/
+.gridexp{
+    display: grid;
+    grid-template-columns: repeat(3,350px);
+    justify-content: space-between;
+    align-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.cardexp{
+    background-color: #333333;
+    border-radius: 15px;
+    color: white;
+    padding: 10px 5px;
+    height: 260px;
+    width: 400px;
+}
+.cardexp img{
+    border-radius: 15px 15px 15px 15px;
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+.cardexp h2{
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.cardexp h3{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.cardexp p{
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+#coments {
+    background-color: #ffc900;
+    color: #222;
+    /*background-image: url("../imagenes/fondo_contactar.png");*/
+    padding-bottom: 50px;
+    border-top: 1px solid #222;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#coments .itemform{
+    display: grid;
+    grid-template-columns: 150px 350px;
+    justify-content: center;
+    padding-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+}
+.itemform input, .itemform textarea{
+    border-radius: 5px;
+    border: 1px solid #222;
+}
+input[type="submit"]{
+    background-color: #222;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    border: 1px solid #222;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    grid-column: 2/3;
+    justify-self: end;
+}
