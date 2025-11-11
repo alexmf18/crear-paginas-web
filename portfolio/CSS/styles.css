@@ -47,6 +47,7 @@ nav{
     padding: 5px;
     text-align: center;
     border-bottom: 1px solid white;
+    z-index: 1000;
 }
 nav ul {
     list-style: none;
@@ -134,6 +135,14 @@ i:hover {
     padding-left: 30px;
 }
 /*Card portfolio*/
+#portfolio {
+    padding-top: 75px;
+    padding-bottom: 50px;
+}
+#portfolio h2{
+    margin-bottom: 55px;
+    text-align: center;
+}
 .filaportfolio{
     display: flex;
     flex-direction: row;
@@ -147,12 +156,14 @@ i:hover {
     width: 250px;
     background-color: #191919;
     border-radius: 15px;
+    margin-right: 50px;
 }
 .card img,.card video,.card iframe{
     border-radius: 15px 15px 0 0;
 }
 .card h3{
     color: #ffc900;
+
 }
 .card h4{
     margin:0 5px 5px 0;
@@ -174,11 +185,21 @@ i:hover {
     transform: scale(1.05);
     transition: transform 0.3s;
     border: 2px solid #ffc900;
+    position: relative;
+    z-index: 1;
 }
 .card button{
     float: right;
 }
 /*Card experiencia*/
+#experiencia {
+    padding-top: 75px;
+    padding-bottom: 50px;
+}
+#experiencia h2{
+    margin-bottom: 25px;
+    text-align: center;
+}
 .gridexp{
     display: grid;
     grid-template-columns: repeat(3,350px);
